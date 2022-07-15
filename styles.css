@@ -89,7 +89,7 @@ button:hover {
     background-color: #1a4031;
 }
 
-h5 {
+#perfume {
     color: #979799;
     font-weight: normal;
     padding: 0.5em 0;
@@ -172,7 +172,7 @@ footer > a {
         margin-bottom: 10px;
     }
 
-    h5 {
+    #perfume {
         margin: 2px;
     }
 
