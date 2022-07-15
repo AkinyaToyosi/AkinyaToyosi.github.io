@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    overflow: hidden;
+    overflow: auto;
 }
 body {
     width: 100%;
@@ -12,19 +12,18 @@ body {
     justify-content: center;
     background-color: #f2e9e2;
     font-family: 'Montserrat', sans-serif;
-}
+    }
 
 .container {
-width: 34.375em;
-height: 25em;
+width: 37.5em;
+height: 26em;
 display: flex;
 flex-direction: row;
 }
 
 .desktop-image {
     width: 50% ;
-    height: 25em;
-    border-radius: 5px;
+    height: 26em;
 }
 
 .mobile-image {
@@ -33,7 +32,7 @@ flex-direction: row;
 
 img {
     width: 100%;
-    height: 25em;
+    height: 26em;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
 }
@@ -52,8 +51,8 @@ img {
     flex-direction: row;
     width: 100%;
     height: 40px;
-    margin-top: 14px;
-    margin-bottom: 14px;
+    margin-top: 18px;
+    margin-bottom: 18px;
 }
 
 #price-left {
@@ -84,7 +83,7 @@ button {
     color: #edfcf6;
     font-size: 14px;
     font-weight: bold;
-    padding: 5px;
+    padding:  0 5px;
 }
 button:hover {
     background-color: #1a4031;
@@ -94,6 +93,7 @@ h5 {
     color: #979799;
     font-weight: normal;
     padding: 0.5em 0;
+    letter-spacing: 0.1875rem;
 }
 
 h1 {
@@ -127,10 +127,11 @@ p {
 }
 
 
-@media only screen and (max-width: 375px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .container {
         width: 90%;
-        height: 86vh;
+        height: 50em;
+        padding: 5px;
         display: flex;
         flex-direction: column;
      
@@ -138,7 +139,7 @@ p {
 
     .mobile-image {
     display: block;
-    height: 30%;    
+    height: 18.75em;    
     }
 
     .desktop-image {display: none;}
@@ -152,7 +153,7 @@ p {
 
     #info {
         width: 100%;
-        height: auto;        
+        height: 550px;        
         padding: 1.75em;
         background-color: #ffffff;
         border-top-right-radius: 0;
@@ -166,7 +167,7 @@ p {
     }
 
     h5 {
-        margin: ;
+        margin: 2px;
     }
 
     h1 {
@@ -182,6 +183,7 @@ p {
     footer {
         width: 90%;
         padding: 0.25em;
+        margin: 0;
     }    
 
     button {
